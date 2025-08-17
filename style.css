@@ -32,10 +32,12 @@ a {
     width: 25%;
     background-color: dimgrey;
 }
-.hero-section .caption-section .direction-icon :focus{
-    outline:  #3d74b6;
- 
+
+.hero-section .caption-section .direction-icon :focus {
+    outline: #3d74b6;
+
 }
+
 /* svg icon */
 .hero-section .caption-section .direction-icon .svg-icon {
     position: relative;
@@ -43,13 +45,14 @@ a {
 }
 
 .hero-section .caption-section .direction-icon .svg-icon .search-icon {
-    width: 25px;
+    width: 35px;
     height: 25px;
     color: gray;
     padding: 5px;
     position: absolute;
-    gap: 10px;
+    gap: 17px;
     right: 50px;
+
 }
 
 
@@ -162,24 +165,24 @@ a {
     }
 
     .hero-section .caption-section .direction-icon .svg-icon .search-icon {
-        width: 20px;
+        width: 25px;
         height: 20px;
         color: gray;
         padding: 5px;
         position: absolute;
         gap: 10px;
-        right: 0px;
+        right: 0;
         font-size: 15px;
+        margin-top: -3px;
     }
 
     .hero-section .caption-section .direction-icon .search-section {
-        width: 190px;
+        width: 260px;
         height: 30px;
         background: rgb(246, 246, 246);
-        border: medium; 
+        border: medium;
         border-radius: 20px;
-        right: 0;
-        position: absolute;
+        margin: auto;
     }
 
     .hero-section .caption-section .caption-button .cbutton-1 {
@@ -203,7 +206,7 @@ a {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
         gap: 30px;
-        max-width: 1200px;
+        max-width: 576px;
         margin: auto;
     }
 
@@ -215,4 +218,38 @@ a {
         color: white;
         font-size: 12px;
     }
+}
+
+@media (max-width:768px) {
+
+
+
+    .hero-section .caption-section .direction-icon .search-section {
+        background: rgb(246, 246, 246);
+        border: medium;
+        border-radius: 20px;
+        right: -60px;
+        position: absolute;
+
+    }
+
+    .hero-section .caption-section .direction-icon .svg-icon .search-icon {
+        width: 35px;
+        height: 25px;
+        color: gray;
+        padding: 5px;
+        position: absolute;
+        gap: 17px;
+        right: -60px;
+
+    }
+
+    .cards {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 30px;
+        max-width: 1200px;
+        margin: auto;
+    }
+
 }
